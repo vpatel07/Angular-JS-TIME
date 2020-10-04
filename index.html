@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
     <script src="angular-time/angular.min.js"></script>
     <script src="JS/app.js"></script>
     <title>Yeay time bois</title>
   </head>
-  <body>
-  <div>
-
-  </div>
+  <body ng-app="NameCalculator">
+    <h1>Name Calulator</h1>
+    <div ng-controller="NameCalculatorController">
+      <div>
+        Your name:
+        <input type="text" ng-model="name">
+      </div>
+    <div>Totla Numeric value of a pereson's name is: {{totalvalue}}</div>
+    </div>
   </body>
 </html>
